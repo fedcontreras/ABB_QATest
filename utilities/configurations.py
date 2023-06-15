@@ -5,3 +5,7 @@ def getConfig():
     config = configparser.ConfigParser()
     config.read('C:\\Users\\fedco\\Documents\\Python\\ValidationBookStoreAPI\\utilities\\properties.ini')
     return config
+
+
+def getPassword():
+    return 'Test123!'
