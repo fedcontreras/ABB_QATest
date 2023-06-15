@@ -52,4 +52,4 @@ Swagger = [demoqa.com/swagger/#/](url)
 
 - Programming Language: Python
 - BDD: Behave
-
+- Note: Change the getConfig() of Configuration.py file to a relative path.
