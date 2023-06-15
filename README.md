@@ -50,3 +50,6 @@ The Acceptance criteria are well defined and provide clear expectations, but the
 
 Swagger = [demoqa.com/swagger/#/](url)
 
+Programming Language: Python
+BDD: Behave
+
