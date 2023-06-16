@@ -5,6 +5,7 @@ from utilities.configurations import *
 from utilities.resources import *
 from api_payLoad import *
 
+
 # Get book
 
 url = getConfig()['API']['endpoint'] + ApiResources.getBooks
@@ -46,3 +47,19 @@ url = getConfig()['API']['endpoint'] + ApiResources.addBook
 headers = {"Content-Type": "application/json"}
 add_response = se.post(url, json=addBookPayLoad("9781593277574"), headers=headers, )
 print(add_response.status_code)
+
+
+# TODO: Generate Token OK - But dont persist in the session - Continue testing
+'''
+url = getConfig()['API']['endpoint'] + '/Account/v1/GenerateToken'
+headers = {"Content-Type": "application/json"}
+auth_response = requests.post(url, json=authorizationPayLoad("testtest", "Test123!"), headers=headers, )
+print(auth_response.status_code)
+json_authResponse = auth_response.json()
+print(json_authResponse)
+token = json_authResponse['token']
+
+se = requests.session()
+se.auth = auth = token
+se.headers.update({'Authorization': 'Bearer {token}'})
+'''

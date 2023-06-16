@@ -26,3 +26,56 @@ def step_impl(context):
             found_book = book
             break
     assert found_book['title'] == context.expected_title
+
+
+# Verify if a user can log in with a valid username and password
+
+@given('A user with a valid username and password')
+def step_imp(context):
+    pass
+
+
+@when('we execute the Authentication method')
+def step_impl(context):
+    pass
+
+
+@then('the user is logged in')
+def step_impl(context):
+    pass
+
+
+# Authorized user is able to Add a book
+
+
+@given('A book is available')
+def step_imp(context):
+    pass
+
+
+@when('I add a book to the store')
+def step_impl(context):
+    pass
+
+
+@then('the book is successfully added')
+def step_impl(context):
+    pass
+
+
+# Authorized user is able to Remove a book
+
+
+@given('A list of books are available')
+def step_imp(context):
+    pass
+
+
+@when('I remove a book to the store')
+def step_impl(context):
+    pass
+
+
+@then('the book is successfully deleted')
+def step_impl(context):
+    pass
