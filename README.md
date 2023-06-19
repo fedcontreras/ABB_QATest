@@ -34,7 +34,7 @@ The Acceptance criteria are well defined and provide clear expectations, but the
 | **Title** | **Description** | **Precondition** | **Steps** |  **Expected Result** | Post-Condition | Priority |
 | -------: | :------: | :------ | :------ | :------ |-------: | -------: | 
 | Test 1 - Search Screen| Verify the presence of search field in the book catalog | N/A | 1. Go to the BookStore Web Page | The search field is displayed like a free text input with a search button | N/A | High |
-| Test 2 - Search Field| Verify that the search field accepts free text input |  | 1. Enter a name of a book | The entered text is visible in the search field | N/A | High |
+| Test 2 - Search Field| Verify that the search field accepts free text input | N/A  | 1. Enter a name of a book | The entered text is visible in the search field | N/A | High |
 | Test 3 - Refresh Search field| Verify that the search results are updated while typing in the search field | N/A | 1. Enter one letter at a time until you reach five | The result list is refreshed with books matching the search input| N/A | Medium| 
 | Test 4 - Search a book by Title | Verify that the search functionality searches by Title | The book is in the Database | 1. Enter the name of an existing book | The Book matching the search input is displayed | N/A | High |
 | Test 5 - Search a book by All atributes | Verify that the search functionality searches across all book attributes | There is a book with all the values in the Database | 1. Search a book by Title, Author & Publisher | Books matching the search input are displayed, regardless of the attribute being searched | N/A | High |
